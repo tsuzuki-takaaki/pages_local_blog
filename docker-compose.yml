@@ -1,0 +1,17 @@
+# This is just for local development and local publish markdown file
+version: '3.8'
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: pages_local_blog
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - 3306:3306
+    volumes:
+      - pages_local_blog_mysql:/var/lib/mysql
+volumes:
+  pages_local_blog_mysql:

@@ -1,0 +1,3 @@
+- [x] 開発環境でHMRによって、Prisma Clientが毎回initializeされてしまう問題
+  - https://www.prisma.io/docs/orm/more/help-and-troubleshooting/help-articles/nextjs-prisma-client-dev-practices  
+  - fixed -> `lib/prisma.ts`

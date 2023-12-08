@@ -8,12 +8,12 @@
 // | Bob   | Article2 from bob   | HEY I AM BOB(duplicate) |
 // +-------+---------------------+-------------------------+
 
-import { PrismaClient } from '@prisma/client'
+import { Prisma, PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
-async function main() {
-  const alice = await prisma.user.upsert({
+const seedUsers: Prisma.UserUpsertArgs[] = [
+  {
     where: { email: 'alice@prisma.io' },
     update: {},
     create: {
@@ -26,9 +26,9 @@ async function main() {
           published: true,
         },
       },
-    },
-  })
-  const bob = await prisma.user.upsert({
+    }, 
+  },
+  {
     where: { email: 'bob@prisma.io' },
     update: {},
     create: {
@@ -48,9 +48,17 @@ async function main() {
           },
         ],
       },
-    },
-  })
-  console.log({ alice, bob })
+    }, 
+  }
+] 
+
+async function main() {
+  console.log('Seeding...')
+  for (const seedUser of seedUsers) {
+    const user = await prisma.user.upsert(seedUser)
+    console.log(`Created: ${user.name}`)
+  }
+  console.log('Seeding finished!')
 }
 
 main()

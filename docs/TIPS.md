@@ -5,3 +5,8 @@
   - -> `node_modules/.prisma/client/index.d.ts`
 - `getStaticProps`, `getServerSideProps`, `getStaticPaths`は型アノテーションが必要そう
   - https://nextjs.org/docs/pages/building-your-application/configuring/typescript#static-generation-and-server-side-rendering
+- prismaのseed
+  - `% npx prisma db seed`
+  - > To configure seeding in your project you need to add a "prisma.seed" property in your package.json with the command to execute it:
+- prismaのCRUDing
+  - https://www.prisma.io/docs/orm/prisma-client/queries/crud

@@ -10,6 +10,7 @@
 - [ ] auth系のe2eテストを書いてみたいので、ログイン機能を実装する
 - [ ] ハッシュ値とCI
 - [ ] prismaのschemaを変更したときに自動migrate
-- [ ] seed用のコマンドを作成する
+- [x] seed用のコマンドを作成する
 - [ ] packageのバージョン指定
   - https://qiita.com/tksst/items/bf62d50b25af69505e8e#1-%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%9B%BA%E5%AE%9A-%E6%8E%A8%E5%A5%A8%E5%BA%A63
+- [ ] pure typescriptとreact, next由来のテストを分ける

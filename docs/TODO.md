@@ -1,0 +1,8 @@
+- [ ] tag検索
+- [ ] Actions経由でbuildしてSSGした静的ファイルをS3に置くようにする
+- [ ] Moduleのimportのsort
+- [ ] commit時のtypecheck
+- [ ] linter, formatter
+- [ ] auth系のe2eテストを書いてみたいので、ログイン機能を実装する
+- [ ] ハッシュ値とCI
+- [ ] prismaのschemaを変更したときに自動migrate

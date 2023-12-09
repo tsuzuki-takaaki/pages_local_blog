@@ -6,7 +6,7 @@
   - Biome?
 - [ ] auto-fix or git-hooks
 - [ ] dependabot
-- [ ] nodeのバージョン固定(.nvmrc + engines) 
+- [x] nodeのバージョン固定(.nvmrc + engines) 
 - [ ] auth系のe2eテストを書いてみたいので、ログイン機能を実装する
 - [ ] ハッシュ値とCI
 - [ ] prismaのschemaを変更したときに自動migrate

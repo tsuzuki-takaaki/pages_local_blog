@@ -29,7 +29,7 @@ export default function Home(props: Props) {
       </Head>
       <main>
         {props.posts.map((post) => {
-          return <p>{post.title}</p>
+          return <p key={post.id}>{post.title}</p>
         })}
       </main>
     </>

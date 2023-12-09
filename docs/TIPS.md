@@ -10,5 +10,10 @@
   - > To configure seeding in your project you need to add a "prisma.seed" property in your package.json with the command to execute it:
 - prismaのCRUDing
   - https://www.prisma.io/docs/orm/prisma-client/queries/crud
+- prismaでdbをresetして、seedし直す場合
+  - `% npx prisma db push --force-reset && npx prisma db seed`
+  - https://github.com/prisma/prisma/issues/11261#issuecomment-1034817459
 - Reason: `object` ("[object Date]") cannot be serialized as JSON. Please only return JSON serializable data types.
   - https://flaviocopes.com/nextjs-serialize-date-json/
+- Dynamic Routes
+  - routerのpathマッチング

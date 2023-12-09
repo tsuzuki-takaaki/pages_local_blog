@@ -5,20 +5,20 @@ import prisma from '../../lib/prisma'
 import type { Post } from '@prisma/client'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const post = await prisma.post.findMany()
+  // See https://flaviocopes.com/nextjs-serialize-date-json/
+  let posts = await prisma.post.findMany()
+  posts = JSON.parse(JSON.stringify(posts))
 
   return {
-    props: { post }
+    props: { posts }
   }
 }
 
 type Props = {
-  post: Post[]
+  posts: Post[]
 }
 
 export default function Home(props: Props) {
-  console.log(props.post)
-
   return (
     <>
       <Head>
@@ -28,7 +28,9 @@ export default function Home(props: Props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <p>Pages</p>
+        {props.posts.map((post) => {
+          return <p>{post.title}</p>
+        })}
       </main>
     </>
   )

@@ -2,8 +2,7 @@
 - [ ] Actions経由でbuildしてSSGした静的ファイルをS3に置くようにする
 - [ ] Moduleのimportのsort
 - [ ] commit時のtypecheck
-- [ ] linter, formatter
-  - Biome?
+- [x] linter, formatter
 - [ ] auto-fix or git-hooks
 - [ ] dependabot
 - [x] nodeのバージョン固定(.nvmrc + engines)

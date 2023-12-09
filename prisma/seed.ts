@@ -21,6 +21,7 @@ const seedUsers: Prisma.UserUpsertArgs[] = [
       name: 'Alice',
       posts: {
         create: {
+          uuid: 'alice-prisma-post-1-uuid',
           title: 'Article1 from alice',
           content: 'HEY I AM ALICE',
           published: true,
@@ -37,11 +38,13 @@ const seedUsers: Prisma.UserUpsertArgs[] = [
       posts: {
         create: [
           {
+            uuid: 'bob-prisma-post-1-uuid',
             title: 'Article1 from bob',
             content: 'HEY I AM BOB',
             published: true,
           },
           {
+            uuid: 'bob-prisma-post-2-uuid',
             title: 'Article2 from bob',
             content: 'HEY I AM BOB(duplicate)',
             published: true,

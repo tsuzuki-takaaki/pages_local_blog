@@ -26,7 +26,7 @@ const seedUsers: Prisma.UserUpsertArgs[] = [
           published: true,
         },
       },
-    }, 
+    },
   },
   {
     where: { email: 'bob@prisma.io' },
@@ -48,9 +48,9 @@ const seedUsers: Prisma.UserUpsertArgs[] = [
           },
         ],
       },
-    }, 
-  }
-] 
+    },
+  },
+]
 
 async function main() {
   console.log('Seeding...')

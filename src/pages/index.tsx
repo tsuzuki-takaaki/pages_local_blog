@@ -10,7 +10,7 @@ export const getStaticProps: GetStaticProps = async () => {
   posts = JSON.parse(JSON.stringify(posts))
 
   return {
-    props: { posts }
+    props: { posts },
   }
 }
 

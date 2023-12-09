@@ -2,6 +2,7 @@
 - [ ] Actions経由でbuildしてSSGした静的ファイルをS3に置くようにする
 - [ ] Moduleのimportのsort
 - [ ] commit時のtypecheck
+- [ ] tsc --noEmit
 - [x] linter, formatter
 - [ ] auto-fix or git-hooks
 - [ ] dependabot

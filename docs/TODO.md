@@ -4,6 +4,8 @@
 - [ ] commit時のtypecheck
 - [ ] tsc --noEmit
 - [x] linter, formatter
+    - biomeはimportのsortも含めてできるらしい
+    - https://twitter.com/bholmesdev/status/1733622553925869976?s=12&t=EJyBqVFSfQ32Mn007fueTA
 - [ ] auto-fix or git-hooks
 - [ ] dependabot
 - [x] nodeのバージョン固定(.nvmrc + engines)
